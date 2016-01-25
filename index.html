@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.12.0.js">
+    </script>
+    <script type="text/javascript" src="js/scripts.js">
+
+    </script>
+    <title>Places I've Been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places</h1>
+      <form id="placeForm" >
+        <div class="form-group">
+          <label for="placeInput" >Place Name:</label>
+          <input id="placeInput">
+        </div>
+        <div class="form-group">
+          <label for="companionInput" >Who you went with: </label>
+          <input id="companionInput">
+        </div>
+        <div class="form-group">
+          <label for="returnInput">I would go again:</label>
+          <label for="returnTrue">True</label>
+          <input class="radio"id="returnTrue" name="boolean" type="radio" value="true">
+          <label for="returnFalse">False</label>
+          <input class="radio" id="returnFalse" name="boolean" type="radio" value="false">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div id="placeListHidden">
+        <h3>Places</h3>
+        <ul id="placeList">
+        </ul>
+      </div>
+      <div id="resultsList">
+        <h3>Place Details</h3>
+        <ul>
+          <li>I went to: <span id="placeOutput"></span></li>
+          <li>I went with: <span id="companionOutput"></span></li>
+          <li>I would return again: <span id="returnOutput"></span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
